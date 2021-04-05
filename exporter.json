@@ -1,0 +1,23 @@
+{
+    "id": "io.supernova.html-preview",
+    "name": "HTML Preview",
+    "description": "Exporter for visual preview of design system elements",
+    "source_dir": "src",
+    "version": "1.0.0",
+    "tags": [
+        "HTML",
+        "CSS",
+        "Preview"
+    ],
+    "author": "Jiri Trecak",
+    "organization": "Supernova",
+    "homepage": "https://supernova.io",
+    "config": {
+        "output": "output.json",
+        "sources": "sources.json"
+    },
+    "engines": {
+        "pulsar": "1.0.0",
+        "supernova": "1.0.0"
+    }
+}
