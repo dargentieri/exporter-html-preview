@@ -2,7 +2,7 @@
     "blueprints": [
         {
             "invoke": "colors.pr",
-            "write_to": "styles/colors.css"
+            "write_to": "colors.html"
         }
     ]
 }
