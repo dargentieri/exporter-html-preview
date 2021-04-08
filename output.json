@@ -3,6 +3,14 @@
         {
             "invoke": "colors.pr",
             "write_to": "colors.html"
+        },
+        {
+            "invoke": "borders.pr",
+            "write_to": "borders.html"
+        },
+        {
+            "invoke": "gradients.pr",
+            "write_to": "gradients.html"
         }
     ]
 }

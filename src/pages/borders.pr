@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  {[ inject "header.pr" context @init.dictionary() /]}    
+  <body>
+    <div class="wrapper">
+      {[ inject "menu.pr" context @init.dictionary().add("selected", "Borders") /]}
+      <div class="content">
+        <h1>Border Tokens</h1>
+        {[ for group in @ds.tokenGroupsOfType("Border") ]}
+        <div class="token-container">
+          <h2>{{ @js.formattedGroupHeader(group, true) }}</h2>
+        
+          <table class="token-wrapper">
+          {[ for token in @ds.tokensByGroupId(group.id) ]}
+            <tr class="border">
+              <td>
+                <div class="token-preview-container">
+                  <div class="token-preview-container-border" style="border: {{ token.value.width.measure }}px solid #{{ token.value.color.hex }};"></div>
+                </div>
+              </td>
+              <td>{{ token.name }}</td>
+              <td>#{{ token.value.color.hex.uppercased() }}, {{ token.value.position.lowercased() }}, {{ token.value.width.measure }}px</td>
+              <td>{{ token.description }}</td>
+            </tr>
+          {[/]}
+          </table>
+        </div>
+        {[/]}
+      </div>
+    </div>
+  </body>
+</html>

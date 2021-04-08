@@ -14,6 +14,41 @@ Pulsar.registerFunction("formattedGroupHeader", function (tokenGroup, showSubpat
 })
 
 /**
+* Describe complex gradient token
+*/
+Pulsar.registerFunction("gradientDescription", function (gradientToken) {
+
+   // Describe gradient as (type) (stop1, stop2 ...)
+   let type = `${gradientToken.value.type} Gradient`
+   let stops = gradientToken.value.stops.map(stop => {
+        return `#${stop.color.hex.toUpperCase()}, ${stop.position * 100}%`
+   }).join(", ")
+
+   return `${type}, ${stops}`
+})
+
+// radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+
+/**
+* Describe complex gradient value as token
+*/
+Pulsar.registerFunction("gradientValue", function (gradientToken) {
+
+    let gradientType = ""
+    switch (gradientToken.value.type) {
+        case "Linear": gradientType = "linear-gradient(0deg, "; break;
+        case "Radial": gradientType = "radial-gradient(circle, "; break;
+        case "Angular": gradientType = "conic-gradient("; break; 
+    } 
+   // Describe gradient as (type) (stop1, stop2 ...)
+   let stops = gradientToken.value.stops.map(stop => {
+        return `#${stop.color.hex.toUpperCase()} ${stop.position * 100}%`
+   }).join(", ")
+
+   return `${gradientType}${stops})`
+})
+
+/**
 * Behavior configuration of the exporter
 * showGroupSubpaths: If enabled, each group header will show subpath as well
 * showMenu: If enabled, menu that allows navigation through categories will be shown, otherwise hidden (ideal for embeeding)
