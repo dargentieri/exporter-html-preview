@@ -7,6 +7,7 @@
 body { padding: 0; margin: 0; font-family: "Poppins", sans-serif; }
 h1 { color: #000000; font-size: 32px; font-weight: bold; }
 h2 { color: #363a3e; font-size: 12px; font-weight: 600; }
+h2 span.light { color: #b7b7b7; }
 
 .content { margin: 40px; }
 

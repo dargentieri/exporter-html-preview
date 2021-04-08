@@ -7,39 +7,30 @@
 # HTML Preview Exporter
 
 
-The HTML Preview allows you to **produce a static HTML page that will render preview of all the tokens in your design system** in such a way that it can be immediately consumed by either developers or designers. Specifically, this exporter is capable of exporting the previews of:
+The HTML Preview allows you to **produce a static HTML page that will render preview of all the tokens in your design system** in such a way that it can be immediately consumed by either developers or designers. Specifically, this exporter is capable of exporting static previews of:
 
-- [x] Color definitions
-- [x] Text Styles
-- [x] Gradients
+- [x] Colors
 - [x] Shadows
-- [x] Borders
-- [x] Radii
-- [x] Measures
-- [x] Text strings
+- [x] Gradients
+- [ ] Borders
+- [ ] Radii
+- [ ] Measures
+- [ ] Typography
+- [ ] Text
+
+We are planning to add the remaining categories sometimes soon. You can use this exporter to embed the previews into your own internal systems, or deploy them somewhere if you don't want them to be consumed from Supernova.
 
 You can generate all production ready-code either manually using Supernova's [VS Code extension](https://marketplace.visualstudio.com/items?itemName=SupernovaIO.pulsar-vsc-extension), or automate your code delivery pipeline using Supernova [Design Continuous Delivery](https://supernova.io/automated-code-delivery).
 
 
 ## Example Usage
 
-Once you have run the exporter against your design system, you can start using the code in your codebase right away. Here are a few examples of how you can use the output of the html preview exporter:
+Once you have run the exporter against your design system, you can immediately open one of the generated files and see the entire content of the design system for that specific category. This is how the preview looks like:
 
-### [Example 1]
+<img src="./readme-preview.png" alt="Supernova Logo" style="max-width:100%;">
 
-[Todo description]
+The HTML files are generated with no additional dependencies (other than one Google hosted font) and everything is bundled inside the HTML file, even inline styles, so you can just take it and embed it wherever you feel like it.
 
-```
-[Code]
-```
-
-
-### [Example 2]
-
-[Todo description]
-
-```
-Code
 ```
 
 ## Installing
