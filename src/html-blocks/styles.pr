@@ -19,6 +19,10 @@ h2 {
   font-size: 12px;
   font-weight: 600;
 }
+h2 span.light {
+  color: #868f98;
+  font-weight: normal;
+}
 .content {
   margin: 40px;
 }

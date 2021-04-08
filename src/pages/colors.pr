@@ -8,7 +8,7 @@
         <h1>Color Tokens</h1>
         {[ for group in @ds.tokenGroupsOfType("Color") ]}
         <div class="token-container">
-          <h2>{{ group.name }}</h2>
+          <h2>{{ @js.formattedGroupHeader(group, true) }}</h2>
         
           <table class="token-wrapper">
           {[ for token in @ds.tokensByGroupId(group.id) ]}
