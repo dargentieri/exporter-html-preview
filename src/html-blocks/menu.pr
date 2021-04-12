@@ -1,9 +1,9 @@
 
- {[ if behavior.showMenu ]}
+ {[ if @configuration().showTopMenu ]}
   <!-- Top menu-->
   <div class="top-menu">
     <ul>
-    {[ for value in ["Colors","Borders","Gradients"] ]}
+    {[ for value in @js.activeMenuItems() ]}
       {[ if value.equals(context.selected) ]}
       <li><a href="{{ value.lowercased() }}.html" class="selected">{{ value }}</a></li>
       {[ else ]}

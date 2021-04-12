@@ -20,5 +20,28 @@
     "engines": {
         "pulsar": "1.0.0",
         "supernova": "1.0.0"
+    },
+    "contributes": {
+        "configuration": [{
+            "default": true,
+            "key": "generateColors",
+            "label": "Generate color list page",
+            "type": "boolean"
+        }, {
+            "default": true,
+            "key": "generateBorders",
+            "label": "Generate border list page",
+            "type": "boolean"
+        }, {
+            "default": true,
+            "key": "generateGradients",
+            "label": "Generate gradient list page",
+            "type": "boolean"
+        }, {
+            "default": true,
+            "key": "showTopMenu",
+            "label": "Show top menu. It is recommended to hide the menu if you want to embed the documentation page",
+            "type": "boolean"
+        }]
     }
 }

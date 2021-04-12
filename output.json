@@ -2,15 +2,18 @@
     "blueprints": [
         {
             "invoke": "colors.pr",
-            "write_to": "colors.html"
+            "write_to": "colors.html",
+            "when": "generateColors"
         },
         {
             "invoke": "borders.pr",
-            "write_to": "borders.html"
+            "write_to": "borders.html",
+            "when": "generateBorders"
         },
         {
             "invoke": "gradients.pr",
-            "write_to": "gradients.html"
+            "write_to": "gradients.html",
+            "when": "generateGradients"
         }
     ]
 }

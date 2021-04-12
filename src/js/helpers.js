@@ -49,6 +49,23 @@ Pulsar.registerFunction("gradientValue", function (gradientToken) {
 })
 
 /**
+ * Generate menu items based on the configuration
+ */
+Pulsar.registerFunction("activeMenuItems", function () {
+    let items = []
+    if (Pulsar.configuration.generateColors) {
+        items.push("Colors")
+    }
+    if (Pulsar.configuration.generateBorders) {
+        items.push("Borders")
+    }
+    if (Pulsar.configuration.generateGradients) {
+        items.push("Gradients")
+    }
+    return items
+})
+
+/**
 * Behavior configuration of the exporter
 * showGroupSubpaths: If enabled, each group header will show subpath as well
 * showMenu: If enabled, menu that allows navigation through categories will be shown, otherwise hidden (ideal for embeeding)
