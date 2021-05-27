@@ -3,7 +3,7 @@
     "name": "HTML Preview",
     "description": "Exporter for visual preview of design system elements",
     "source_dir": "src",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "tags": [
         "HTML",
         "CSS",
