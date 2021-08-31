@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-  {[ inject "header.pr" context @init.dictionary() /]}    
+  {[ inject "header.pr" context {} /]}    
   <body>
     <div class="wrapper">
-      {[ inject "menu.pr" context @init.dictionary().add("selected", "Colors") /]}
+      {[ inject "menu.pr" context { "selected": "Colors" } /]}
       <div class="content">
         <h1>Color Tokens</h1>
-        {[ for group in @ds.tokenGroupsOfType("Color") ]}
+        {[ for group in ds.tokenGroupsOfType("Color") ]}
         <div class="token-container">
-          <h2>{{ @js.formattedGroupHeader(group, true) }}</h2>
+          <h2>{{ formattedGroupHeader(group, true) }}</h2>
         
           <table class="token-wrapper">
-          {[ for token in @ds.tokensByGroupId(group.id) ]}
+          {[ for token in ds.tokensByGroupId(group.id) ]}
             <tr class="color">
               <td><div class="token-preview-container" style="background-color: #{{ token.value.hex }};"></div></td>
               <td>{{ token.name }}</td>
               <td>#{{ token.value.hex.uppercased() }}</td>
-              <td>{{ token.value.a.dividedBy(255).multipliedBy(100) }}%</td>
-              <td>{{ @boolean.ternaryValue(@compare.greaterThan(token.description.count(), 0), token.description, "No description") }}</td>
+              <td>{{ token.value.a / 255 * 100 }}%</td>
+              <td>{{ (token.description && token.description.count() > 0) ? token.description : "No description" }}</td>
             </tr>
           {[/]}
           </table>
