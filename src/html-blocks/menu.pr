@@ -1,9 +1,9 @@
 
- {[ if @configuration().showTopMenu ]}
+ {[ if exportConfiguration().showTopMenu ]}
   <!-- Top menu-->
   <div class="top-menu">
     <ul>
-    {[ for value in @js.activeMenuItems() ]}
+    {[ for value in activeMenuItems() ]}
       {[ if value.equals(context.selected) ]}
       <li><a href="{{ value.lowercased() }}.html" class="selected">{{ value }}</a></li>
       {[ else ]}

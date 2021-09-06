@@ -53,13 +53,13 @@ Pulsar.registerFunction("gradientValue", function (gradientToken) {
  */
 Pulsar.registerFunction("activeMenuItems", function () {
     let items = []
-    if (Pulsar.configuration.generateColors) {
+    if (Pulsar.exportConfiguration.generateColors) {
         items.push("Colors")
     }
-    if (Pulsar.configuration.generateBorders) {
+    if (Pulsar.exportConfiguration.generateBorders) {
         items.push("Borders")
     }
-    if (Pulsar.configuration.generateGradients) {
+    if (Pulsar.exportConfiguration.generateGradients) {
         items.push("Gradients")
     }
     return items

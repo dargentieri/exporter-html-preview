@@ -7,6 +7,6 @@
       rel="stylesheet"
     />
     <style>
-    {[ inject "styles" context @init.dictionary() /]}
+    {[ inject "styles" context {} /]}
     </style>    
   </head>

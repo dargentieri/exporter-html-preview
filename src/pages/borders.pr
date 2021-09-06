@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-  {[ inject "header.pr" context @init.dictionary() /]}    
+  {[ inject "header.pr" context {} /]}    
   <body>
     <div class="wrapper">
-      {[ inject "menu.pr" context @init.dictionary().add("selected", "Borders") /]}
+      {[ inject "menu.pr" context { "selected": "Borders" } /]}
       <div class="content">
         <h1>Border Tokens</h1>
-        {[ for group in @ds.tokenGroupsOfType("Border") ]}
+        {[ for group in ds.tokenGroupsOfType("Border") ]}
         <div class="token-container">
-          <h2>{{ @js.formattedGroupHeader(group, true) }}</h2>
+          <h2>{{ formattedGroupHeader(group, true) }}</h2>
         
           <table class="token-wrapper">
-          {[ for token in @ds.tokensByGroupId(group.id) ]}
+          {[ for token in ds.tokensByGroupId(group.id) ]}
             <tr class="border">
               <td>
                 <div class="token-preview-container">
