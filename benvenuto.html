@@ -1,0 +1,435 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    
+    
+    
+            
+    
+            
+    
+    
+    
+    
+    
+    <!-- Meta information -->
+    <meta name="robots" content="all" />
+    
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no" />
+    <link href="https://studio-assets.supernova.io/design-systems/19874/2c0d0331-3b08-4181-8794-b734015f25d8.svg?Expires=1980201600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdHVkaW8tYXNzZXRzLnN1cGVybm92YS5pby9kZXNpZ24tc3lzdGVtcy8xOTg3NC8yYzBkMDMzMS0zYjA4LTQxODEtODc5NC1iNzM0MDE1ZjI1ZDguc3ZnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxOTgwMjAxNjAwfX19XX0_&Signature=RJziLE2VObZ4vUYQ3ywntgmzo-PJdDfG337zx9QbDRZwu-Jgmy1N1p9Mkyj9Wi~7-qB8VmFyx7gRQzqlnG6XPMXv93Z9clvmPWn5pW2l1z~GAnOrT4l3IDzDr5fDJ-pgFyH-0V7NP0qvp2dxz7gmweyRyvZCeffq06KJUoEUYvZDwGq3QMNFYDSdRN5hiCrnyAFnm2Dj2K07J~P45Vlhgff0tRnwRQjtVXuAJq~MwgJPssbe3EBB~VOcD05mik1QG4Wr-A3uf6M5koW6jzm-j7fkjvdGfDirNGQ-V8VtgK65426j-XjxItAL~Mpd5ANIc4rBT0E8BwnCupAMZ7GOig__&Key-Pair-Id=APKAJGK34LCCAUR7N6LA" rel="icon" />
+    
+    
+    <!-- Primary Meta Tags -->
+    <title>Benvenuto | Made with Supernova</title>
+    <meta name="title" content="Benvenuto | Made with Supernova" />
+    <meta name="description" content="Utilizza le linee guida di [NomeDS]
+    per progettare i prodotti digitali
+    del Gruppo Cassa Centrale. | Design system documentation, made with ❤️ using Supernova" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/benvenuto.html" />
+    <meta property="og:title" content="Benvenuto | Made with Supernova" />
+    <meta property="og:description" content="Utilizza le linee guida di [NomeDS]
+    per progettare i prodotti digitali
+    del Gruppo Cassa Centrale. | Design system documentation, made with ❤️ using Supernova" />
+    
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="/benvenuto.html" />
+    <meta property="twitter:title" content="Benvenuto | Made with Supernova" />
+    <meta property="twitter:description" content="Utilizza le linee guida di [NomeDS]
+    per progettare i prodotti digitali
+    del Gruppo Cassa Centrale. | Design system documentation, made with ❤️ using Supernova" />
+    
+    
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css?v=3.0.6" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js" integrity="sha512-3S64QagKiTlNjSfuh3UYtYSkP494WHoWc96YvbmB2BReHpNtxlrMNY6MbJLDpavcgD8Pj5p44F/PY586uVO5iA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/javascript/javascript.min.js" integrity="sha512-I6CdJdruzGtvDyvdO4YsiAq+pkWf2efgd1ZUSK2FnM/u2VuRASPC7GowWQrWyjxCZn6CT89s3ddGI+be0Ak9Fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/xml/xml.min.js" integrity="sha512-LarNmzVokUmcA7aUDtqZ6oTS+YXmUKzpGdm8DxC46A6AHu+PQiYCUlwEGWidjVYMo/QXZMFMIadZtrkfApYp/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/jsx/jsx.min.js" integrity="sha512-+0Bk5jqcZFYMi5WaRZaTboF7s25sht/1pxmg3sXqWDeidrrw1yRqDzF25jsMOnToR8iXSqzrHfAD5wiDO1lwSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://codemirror.net/5/lib/codemirror.css" />
+    
+    
+
+    
+    <style>
+body {
+
+}
+</style>
+
+<script>
+    
+</script>
+</head>
+
+<body class="light page-body-benvenuto">
+
+
+<div class="SNSearch SNSearch-container backdrop-blur">
+   <div class="SNSearch-box">
+      <header class="SNSearch-header">
+         <label class="SNSearch-input-label">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M5.5 1.5C3.3 1.5 1.5 3.3 1.5 5.5C1.5 7.7 3.3 9.5 5.5 9.5C7.7 9.5 9.5 7.7 9.5 5.5C9.5 3.3 7.7 1.5 5.5 1.5ZM5.5 0.5C8.3 0.5 10.5 2.7 10.5 5.5C10.5 6.7 10.1 7.8 9.4 8.7L12.4 11.7L11.7 12.4L8.7 9.4C7.8 10.1 6.7 10.5 5.5 10.5C2.7 10.5 0.5 8.3 0.5 5.5C0.5 2.7 2.7 0.5 5.5 0.5Z" fill="black" fill-opacity="0.3"/>
+            </svg>
+         </label>
+         <form action="" novalidate="" class="SNSearch-form">
+            <input class="SNSearch-input" id="SNSearch-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search docs" maxlength="64" enterkeyhint="go">
+         </form>
+         <div class="SNSearch-close search"></div>
+      </header>
+      <div class="SNSearch-results">
+        
+      </div>
+      <footer class="SNSearch-footer">
+         <div class="info">
+            <span>Cmd</span>/<span>Ctrl</span> + <span>K</span> to search
+         </div>
+         <div class="info">
+            <span>ESC</span> to clear / exit
+         </div>
+      </footer>
+   </div>
+</div>
+<!-- Document Wrapper -->
+<div id="main-wrapper"> 
+  
+  <!-- Content -->
+  <div id="content" role="main" class="">
+  
+    
+    
+    <!-- Header --> 
+    <header id="header" class="sticky-top"> 
+        
+        <!-- Navbar -->
+        <nav class="primary-menu navbar navbar-expand-lg navbar-text-dark">
+    
+            <!-- Logo -->
+    
+            <!-- Sidebar Toggler -->
+            <button id="sidebarCollapse" class="toggle-navbar" type="button">
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 6.5h-17v2h17v-2ZM20.5 11.5h-17v2h17v-2ZM20.5 16.5h-17v2h17v-2Z" fill="currentColor"/></svg>        
+            </button>
+    
+            <!-- Redirect to the first real page on logo click -->
+            <a href="/benvenuto.html">
+                <div class="logo-wrapper">
+                
+                        <img class="default" src="https://studio-assets.supernova.io/design-systems/19874/79ec9401-afe6-487e-988c-fd507d11707d.svg?Expires=1980201600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdHVkaW8tYXNzZXRzLnN1cGVybm92YS5pby9kZXNpZ24tc3lzdGVtcy8xOTg3NC83OWVjOTQwMS1hZmU2LTQ4N2UtOTg4Yy1mZDUwN2QxMTcwN2Quc3ZnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxOTgwMjAxNjAwfX19XX0_&Signature=f7FasbZmifqPIReKgPPbIBprEZzUnZKFkBV4UmvEWSQNZJ8O3Uu7pgFOeKoMIBLKeWAXIFL~OcdEf0ZjAQQ58am8nmwPWEr3u1YZsjBpYqB1p4O81n53R07CvZCWIYzcCNRPVgdDeuH4uyH2dmTEfiL77Eb7hFwJ6wdmGyQy2An8AXHk8VJ7OuuesjQOz1Iqd5ki2Pmom2Ib-GAcGj5vJdx0wmPdGvSKke2EhQvBvPl3~9~4PZqhZZ3-rZTe85enUAfqEi9zv~oZeepK3rVSuP1f5JI9UjwH-WNr4Wg8zQhJVJ30VmHz8FOxty0Tvwyzm-5JHNJzlyk-D-cvcbHYDw__&Key-Pair-Id=APKAJGK34LCCAUR7N6LA" alt="Our Documentation" style="content: none" />
+                </div>
+            </a>
+    
+            <div class="container-fluid">
+    
+            <!-- Potential Left Link Here -->
+            <div id="header-nav" class="navbar-collapse">
+                <ul class="navbar-nav">
+                            
+                                <li><a class="typographyDocsViewNavigation active" href="/benvenuto.html">Benvenuto</a></li>
+                            
+                                <li><a class="typographyDocsViewNavigation " href="/ui-foundations/introduzione.html">UI Foundations</a></li>
+                            
+                                <li><a class="typographyDocsViewNavigation " href="/ux-foundations/introduzione-generlae.html">UX Foundations</a></li>
+                            
+                                <li><a class="typographyDocsViewNavigation " href="/brand-identity/font-system.html">Brand identity</a></li>
+                            
+                                <li><a class="typographyDocsViewNavigation " href="/accessibility/palette-di-gruppo.html">Accessibility</a></li>
+                </ul>
+    
+                <div class="utility-nav">
+                
+                <div id="mobile-menu-container" class="dropdown">
+                    <button class="btn btn-secondary btn-outlined" type="button" id="mobile-menu-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   
+                        
+                                
+                                
+                                        Benvenuto
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                    </button>
+                    <div class="dropdown-menu pull-right" aria-labelledby="mobile-menu-selector">
+                            
+                            
+                                <a class="dropdown-item checked" href="/benvenuto.html">Benvenuto</a>
+                            
+                            
+                            
+                                <a class="dropdown-item " href="/ui-foundations/introduzione.html">UI Foundations</a>
+                            
+                            
+                            
+                                <a class="dropdown-item " href="/ux-foundations/introduzione-generlae.html">UX Foundations</a>
+                            
+                            
+                            
+                                <a class="dropdown-item " href="/brand-identity/font-system.html">Brand identity</a>
+                            
+                            
+                            
+                                <a class="dropdown-item " href="/accessibility/palette-di-gruppo.html">Accessibility</a>
+                            
+                    </div>
+                </div>
+    
+                <div id="version-container" class="dropdown">
+                    <button class="btn btn-secondary btn-outlined" type="button" id="version-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Loading
+                    </button>
+                    <div class="dropdown-menu pull-right" aria-labelledby="version-selector">
+                    </div>
+                </div>
+                <button class="btn-search search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.608 3a7.608 7.608 0 1 0 4.557 13.702L19.463 21 21 19.463l-4.298-4.298A7.608 7.608 0 0 0 10.608 3Zm-5.434 7.608a5.435 5.435 0 1 1 10.869 0 5.435 5.435 0 0 1-10.87 0Z" fill="currentColor"/></svg>
+                </button>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+    
+    <!-- Docs Content -->
+    <div class="docs-content fullscreen">
+
+      
+      
+      
+      
+      
+      
+      
+      <div class="container-title  flexed" style="height: 599px; background: url(https://studio-assets.supernova.io/design-systems/19874/8ff45300-962f-448c-9490-2eee0be68944.png?Expires=1980201600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdHVkaW8tYXNzZXRzLnN1cGVybm92YS5pby9kZXNpZ24tc3lzdGVtcy8xOTg3NC84ZmY0NTMwMC05NjJmLTQ0OGMtOTQ5MC0yZWVlMGJlNjg5NDQucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxOTgwMjAxNjAwfX19XX0_&Signature=WoyPXhIog77A1whq8U1gX4v18cSx7Q7NE0LuIcaTm1pYUIfp-hU-ql~2k4tOxmaRlrxWcGuT1tqQcR5yiFr3585RNbM3RzV9rMTQtnn9WWaoLV22CtiHvzNWNruGVBF4tCxvpEac-jkpZEKMfaF2INvyjaYc2x2ntjNIU1L1NOmRgYqCCN4ko3raQUJDAJsz2pnWsj-qT2kCRSUllgkoaOaFS9b52HXe-1DGaKJ0-Lyj8-pIjFL7D9iQY8uFK1S7bogIjrFz7pHS7eZCCm-bDtsOYnKGj3ydiFBRbnWXNjnbWGPAhwvcmU9S7~Wfthk-5W2kxtfKIFfOCpzYoGOeVg__&Key-Pair-Id=APKAJGK34LCCAUR7N6LA) no-repeat center center; background-size: cover;">
+      
+          <div class="slider">
+              
+      
+                  
+                  <h1 style="">Benvenuto</h1>
+                  
+                      <p class="subtitle" style="">Utilizza le linee guida di [NomeDS]<br />per progettare i prodotti digitali<br />del Gruppo Cassa Centrale.</p>
+          </div>
+      </div>
+      
+      <div class="no-container-tabs"></div>
+      
+      
+      <div class="container">
+        <section id="section-content-page">
+        <div class="tab-content" id="page-tab-content">
+
+                    
+                                            <a id="search-83a2a910-5383-11ed-a60f-d5eb8dc9a334"></a>
+                                                    <h1 class="heading" id="section-linee-guidae-principi-di-design-83">
+                                                        
+                                                            
+                                                            
+                                                        
+                                                        Linee guida<br />e principi di Design
+                                                                                <a data-copy-url="true" title="Copy link to heading" aria-expanded="false" class="copy-anchor" href="#section-linee-guidae-principi-di-design-83"><span role="img" class="css-pxzk9z"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z" fill="currentColor"/><path d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z" fill="currentColor"/><path d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z" fill="currentColor"/></svg></span></a>
+                                                                            </h1>
+                                            
+                    
+                    
+                                        
+                                
+                                <a id="search-f8370550-5383-11ed-a60f-d5eb8dc9a334"></a>    <p>
+                                           
+                                           
+                                       
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Sapien, quisque purus risus nibh nunc, odio lectus<br />Id dignissim cursus.
+                                       </p>
+                                
+                                
+                    
+                    
+                                        
+                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                <div class="shortcut-container null">
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                          <a href="/ui-foundations/introduzione.html" class="shortcut-item">
+                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                          <div class="preview" style="background: url(https://studio-assets.supernova.io/design-systems/19874/abae5c1e-6732-49e6-bf3c-b3b332f0e040.png?Expires=1980201600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdHVkaW8tYXNzZXRzLnN1cGVybm92YS5pby9kZXNpZ24tc3lzdGVtcy8xOTg3NC9hYmFlNWMxZS02NzMyLTQ5ZTYtYmYzYy1iM2IzMzJmMGUwNDAucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxOTgwMjAxNjAwfX19XX0_&Signature=llquzjy0QEtxhxsygXkgvRkHD6hVrWcXw4yHUor4nGSa2Vc-x0m~vLN3GhlFiDv4LfkJXZmii6xtNdREPeS3ANih3j~7pBMSBNftOW642aqvcw6d8JB4pvbmiRipLMf-hcMmlwX47~2awvva671wZn4Nl2kK~xF2UjNqoS9PetcUimo18ctuyJCiTQDaDd0qi~pi3~yWQvu38ulVz~bss20pmWgEkqihLiiANo4SQYSL-ry-jSS~Yrmha~QXX572fzSQRnesW9OH4hweHJP-n4wyhwri5vjp4JmPWlVG52gNBCrOZfd~TvrlzyHChaKMj-uVFP0AFKZmjfTU5pWurg__&Key-Pair-Id=APKAJGK34LCCAUR7N6LA);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                          <div class="content">
+                                                                                                                                                                                                                                              <p class="title">UI Foundations</p>
+                                                                                                                                                                                                                                                  <p class="description">Lorem ipsum dolor sit amet</p>    
+                                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                                      </a>
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                          <a href="/ux-foundations/introduzione-generlae.html" class="shortcut-item">
+                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                          <div class="preview" style="background: url(https://studio-assets.supernova.io/design-systems/19874/0f7ba0b0-3e9b-4fa4-9b71-600ad1334ede.png?Expires=1980201600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdHVkaW8tYXNzZXRzLnN1cGVybm92YS5pby9kZXNpZ24tc3lzdGVtcy8xOTg3NC8wZjdiYTBiMC0zZTliLTRmYTQtOWI3MS02MDBhZDEzMzRlZGUucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxOTgwMjAxNjAwfX19XX0_&Signature=kcX4jkYdt50VvZQzMTZYieFJO9Qt9s3N~HJaMENJMdiiRnedeeKehNoBnHINbUH4621V3rp9Sz6gXehUgJz9VPZXwMyxw3amCWaUL9wVXn8cD95pTTMqrMrsPsdE6Oj2UxY66Iu~6lBy-Yj0dAL1XxJEmOPMexw0VRXb9V2~xoT5mj4W8SJJHti3YxeOl4BtrYnxcOVSho8iEJw37Evas-iQp5OPzBbl8Vnad7W0yjPGsUfogwPScYz~Xhb28cyTSX-SxyelYa~5BHg2IaI~8M3osyxKh37RoKL68y0BRhcKfE1VJZvxerp9nb48R33smCQ-ZzCzZYVu7kPGaTfI~w__&Key-Pair-Id=APKAJGK34LCCAUR7N6LA);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                          <div class="content">
+                                                                                                                                                                                                                                              <p class="title">UX Foundations</p>
+                                                                                                                                                                                                                                                  <p class="description">Lorem ipsum dolor sit amet</p>    
+                                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                                      </a>
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                          <a href="/brand-identity/font-system.html" class="shortcut-item">
+                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                          <div class="preview" style="background: url(https://studio-assets.supernova.io/design-systems/19874/531d93c0-a5dc-4fb1-a9f9-8d34e64f22a4.png?Expires=1980201600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdHVkaW8tYXNzZXRzLnN1cGVybm92YS5pby9kZXNpZ24tc3lzdGVtcy8xOTg3NC81MzFkOTNjMC1hNWRjLTRmYjEtYTlmOS04ZDM0ZTY0ZjIyYTQucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxOTgwMjAxNjAwfX19XX0_&Signature=J~zh~xEMuaRgXDHvE7lTGbyJmeh-qfrgteP8Jzk6pDny4EntFY4yEhii3MmcSvwAz8mRJil1E8jM4uTnaAE~xDVPh1ym-fY85gmW8-EGk0g8OrObhzQRtriQzZ~btI6sFNrwiegThS5kLWo2~BYXGmCli6lllj5aXEXD2yUwR4seyivmwlk4fiRWsvaxHk7p9-oRlD2~crPdzNPU2fffk07OwLOFxmwChQ0HMID1wn~tVxO06mzbnggrHOLKHIo8AVjziWPEElPLAiZ15HkV2CCX6i2IxTKt9rrCF1QkRs6034U5u5fjhz-KAbZ0onD0qHlflnPW3bSJbl6ako1ObA__&Key-Pair-Id=APKAJGK34LCCAUR7N6LA);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                          <div class="content">
+                                                                                                                                                                                                                                              <p class="title">Brand identity</p>
+                                                                                                                                                                                                                                                  <p class="description">Lorem ipsum dolor sit amet</p>    
+                                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                                      </a>
+                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                          <a href="/accessibility/palette-di-gruppo.html" class="shortcut-item">
+                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                          <div class="preview" style="background: url(https://studio-assets.supernova.io/design-systems/19874/c54901d2-1d04-4679-a121-9677f715a8e2.png?Expires=1980201600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdHVkaW8tYXNzZXRzLnN1cGVybm92YS5pby9kZXNpZ24tc3lzdGVtcy8xOTg3NC9jNTQ5MDFkMi0xZDA0LTQ2NzktYTEyMS05Njc3ZjcxNWE4ZTIucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxOTgwMjAxNjAwfX19XX0_&Signature=LjcLkIz-SJVQomf0sug4qW1ISsqowgwHzB~fa65rC5OA5TnvhzWoHDmA~9o6FMmBAGda8uaVZmTuCwx5geO0~2PHh8nC3q0-gEG0k~AfrhPN2vGIis-qQnNlV9KH6d4R~y8L8-cAhWqzx2GDrCmRbESw83ouVTbRgPYDFX3OdFx1DFPgjqgiHKktBXtB~nLQIixkgyikWggIXk3zMX77ETekK4WVXfBuJZ8Bgh9HrLIX~setYxhyc-oT0glq-rU0zL40eKK5zzRPJUojefRT7YtTarKxBy~guc~FtVn0xKefdqEw2e1lR61zi-TOyRZ31IKUXqdEmdecZsGYeooxYw__&Key-Pair-Id=APKAJGK34LCCAUR7N6LA);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                          <div class="content">
+                                                                                                                                                                                                                                              <p class="title">Accessibility</p>
+                                                                                                                                                                                                                                                  <p class="description">Lorem ipsum dolor sit amet</p>    
+                                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                                      </a>
+                                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                                
+                    
+                    
+                    
+        
+        
+        <div class="previous-next row">
+            <a href="/ui-foundations/introduzione.html" class="offset-md-6 col-6 right">
+            <div class="segment">
+                <div class="segment-text">
+                        <div class="direction">UI Foundations</div>
+                    <div class="pagename">Introduzione</div>
+                </div>
+                <div class="arrow">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3536 5.14648L16.7071 10.5L11.3536 15.8536L10.6464 15.1465L14.7929 11H4V10H14.7929L10.6464 5.85359L11.3536 5.14648Z" fill="currentColor" fill-opacity="0.7"/>
+                    </svg>
+                </div>
+                </div>
+            </a>
+        </div>
+                </div>
+        </section>
+        <div id="content-nav-container">
+            <nav id="content-nav">
+                    <span class="content-nav-header">CONTENTS</span>
+                    <ul>
+                            <li class=""><a href="#section-linee-guidae-principi-di-design-83">Linee guida
+        e principi di Design</a></li>
+                    </ul>
+            </nav>
+        </div>      </div>
+
+      
+      
+         <div class="container-footer">
+          <div class="slider">
+              <div class="row">
+              <div class="col-sm-5 mb-3">
+                  <h5>My Doc Site</h5>
+                  <p class="d-block mb-3">This footer can be completely changed through Supernova customization options. Head to site advanced customization to learn more!</p>
+                  <p class="d-block mb-3 text-muted">&copy; 2022 My Amazing Company</p>
+              </div>
+              <div class="col-sm-3 offset-sm-1 mb-3">
+              <h5>Resources</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Changelog</a></li>
+                  <li><a href="#">Storybook</a></li>
+                  <li><a href="#">Figma</a></li>
+              </ul>
+              </div>
+              <div class="col-sm-3 mb-3">
+              <h5>Support</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Report issue</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+              </div>
+          </div>
+          </div>
+      </div>    </div>
+  </div>
+  <!-- Content end --> 
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/hotkeys-js@3.7.3/dist/hotkeys.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+
+<!-- Prism -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" integrity="sha512-pUNGXbOrc+Y3dm5z2ZN7JYQ/2Tq0jppMDOUsN4sQHVJ9AUQpaeERCUfYYBAnaRB9r8d4gtPKMWICNhm3tRr4Fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Live sandbox -->
+<script src="/assets/js/sandbox.js"></script> 
+
+<!-- Search Support-->
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.5.3"></script>
+<script src="/si.js"></script>  
+
+<!-- General scripts -->
+<script src="/assets/js/functionality.js"></script>
+<script src="/assets/js/toast.js"></script> 
+
+<!-- After loading -->
+<script>
+$(document).ready(function() {
+    // Load versions
+    const versionUrl = "null/../versions.json"
+    loadVersions(versionUrl)
+
+    // Load sandboxes, if any
+    const sandboxConfigUrl = "null/../sandbox.json"
+    loadSandboxes(sandboxConfigUrl)
+});
+</script>
+
+
+
+</body>
+</html>
