@@ -1,0 +1,15 @@
+
+:root {
+    --gradientPaletteBrandGradientGradient: linear-gradient(
+          180deg,
+          #005366 0%,   
+          #0d8ba8 100%  
+        )
+        ;    
+    --gradientTokensBackgroundGradientBg: linear-gradient(
+          180deg,
+          #005366 0%,   
+          #0d8ba8 100%  
+        )
+        ;    
+}
